@@ -1,15 +1,12 @@
-# ──────────────────────────────────────────────────────────────────
-#  🌌  3D Isometric Contribution Graph Generator
-#  Runs: Daily at 01:00 UTC + on manual trigger
-#  Output: profile-3d-contrib/ directory (committed to main)
-# ──────────────────────────────────────────────────────────────────
-
 name: 🌌 Generate 3D Contribution Graph
 
 on:
   schedule:
-    - cron: "0 1 * * *"   # Every day at 01:00 UTC (offset from snake)
-  workflow_dispatch:        # Allow manual trigger from Actions tab
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -17,38 +14,20 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
-    permissions:
-      contents: write       # Required to commit back to repo
-
     steps:
-      - name: ⬇️ Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: 🌌 Generate 3D contribution graph
+      - name: Generate 3D contribution graph
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-          MAX_REPOS: 100
-          SETTING_JSON: |
-            {
-              "githubUserName": "Silenttears-cloud",
-              "startWeekOn": 0,
-              "activityColors": {
-                "bg": "#0d1117",
-                "text": "#f0e6ff",
-                "grade4": "#ff2d78",
-                "grade3": "#9b5de5",
-                "grade2": "#6d28d9",
-                "grade1": "#3d1060",
-                "grade0": "#1a0a2e"
-              }
-            }
 
-      - name: 💾 Commit and push updated graph
+      - name: Commit and push
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action [3D Contrib]"
+          git config --local user.name "GitHub Action"
           git add -A
-          git diff --staged --quiet || git commit -m "chore(bot): 🌌 update 3D contribution graph [skip ci]"
+          git diff --staged --quiet || git commit -m "chore: update 3D contribution graph [skip ci]"
           git push

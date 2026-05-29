@@ -1,17 +1,12 @@
-# ──────────────────────────────────────────────────────────────────
-#  🐍  Contribution Snake Generator
-#  Runs: Daily at midnight UTC + on manual trigger
-#  Output: output branch  →  github-contribution-grid-snake*.svg
-# ──────────────────────────────────────────────────────────────────
-
 name: 🐍 Generate Contribution Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # Every day at 00:00 UTC
-  workflow_dispatch:        # Allow manual trigger from Actions tab
-  push:
-    branches: [main]
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   generate-snake:
@@ -20,11 +15,11 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: ⬇️ Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: 🐍 Generate snake SVGs
-        uses: Platane/snk/svg-only@v3
+      - name: Generate snake SVGs
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
@@ -33,10 +28,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 🚀 Deploy to output branch
+      - name: Deploy to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
+          keep_history: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

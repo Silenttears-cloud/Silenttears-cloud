@@ -1,43 +1,29 @@
-# ──────────────────────────────────────────────────────────────────
-#  ⏱️  WakaTime Live Coding Stats Updater
-#  Runs: Every 6 hours + on manual trigger
-#  Requires: WAKATIME_API_KEY secret set in repository settings
-#
-#  SETUP:
-#  1. Sign up at https://wakatime.com
-#  2. Install the WakaTime extension in VS Code
-#  3. Go to https://wakatime.com/api-key — copy your API key
-#  4. In your GitHub repo → Settings → Secrets → Actions:
-#     Add secret: WAKATIME_API_KEY = <your API key>
-#  5. In README.md, make sure these markers exist:
-#     <!--START_SECTION:waka-->
-#     <!--END_SECTION:waka-->
-# ──────────────────────────────────────────────────────────────────
-
 name: ⏱️ Update WakaTime Stats
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # Every 6 hours
-  workflow_dispatch:         # Allow manual trigger
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update-readme:
-    name: Sync WakaTime Coding Stats
+    name: Sync WakaTime Stats
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
     steps:
-      - name: ⬇️ Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: ⏱️ Update WakaTime section in README
+      - name: Update WakaTime section in README
         uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SHOW_TITLE: true
           BLOCKS: ░▒▓█
           TIME_RANGE: last_7_days
           SHOW_TIME: true
-          SHOW_MASKED_TIME: false
-          COMMIT_MESSAGE: "chore(bot): ⏱️ update WakaTime coding stats [skip ci]"
