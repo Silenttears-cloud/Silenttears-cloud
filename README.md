@@ -213,9 +213,7 @@ export default new Ayushi();
 
 <br/>
 
-<!-- ═══════════════════════════════════════════
-     SECTION 7 — 3D CONTRIBUTION GRAPH
-     ═══════════════════════════════════════════ -->
+<!-- SECTION 7 — ACTIVITY GRAPH -->
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0a2e,50:3d0a5e,100:1a0a2e&height=3" width="100%" alt="divider"/>
 
@@ -225,7 +223,9 @@ export default new Ayushi();
 
 <br/>
 
-<img src="https://ghchart.rshah.org/FF2D78/Silenttears-cloud" width="100%" alt="Contribution Chart" />
+<a href="https://github.com/Silenttears-cloud">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Silenttears-cloud&bg_color=0d1117&color=c4b5fd&line=ff2d78&point=ff2d78&area=true&area_color=9b5de5&hide_border=true&custom_title=Ayushi%27s%20Contribution%20Activity" width="100%" alt="Activity Graph" />
+</a>
 
 <br/>
 
@@ -235,9 +235,7 @@ export default new Ayushi();
 
 <br/>
 
-<!-- ═══════════════════════════════════════════
-     SECTION 8 — CONTRIBUTION SNAKE
-     ═══════════════════════════════════════════ -->
+<!-- SECTION 8 — SNAKE -->
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0a2e,50:2d1060,100:1a0a2e&height=3" width="100%" alt="divider"/>
 
@@ -247,11 +245,11 @@ export default new Ayushi();
 
 <br/>
 
-<img src="https://ghchart.rshah.org/9b5de5/Silenttears-cloud" width="100%" alt="Contribution Grid" />
-
-<br/>
-
-> 🐍 *The animated snake will appear here automatically after running the [snake workflow](https://github.com/Silenttears-cloud/Silenttears-cloud/actions/workflows/snake.yml) once.*
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/output/github-contribution-grid-snake.svg" />
+  <img src="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution Snake" />
+</picture>
 
 </div>
 
