@@ -246,9 +246,9 @@ export default new Ayushi();
 <br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/output/github-contribution-grid-snake.svg" />
-  <img src="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution Snake" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/main/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/main/github-snake.svg" />
+  <img src="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/main/github-snake-dark.svg" width="100%" alt="Contribution Snake" />
 </picture>
 
 </div>
