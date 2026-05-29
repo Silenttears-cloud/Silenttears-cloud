@@ -179,16 +179,16 @@ export default new Ayushi();
 <br/>
 
 <a href="https://github.com/Silenttears-cloud">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Silenttears-cloud&show_icons=true&theme=transparent&hide_border=true&bg_color=0d1117&title_color=ff2d78&text_color=c4b5fd&icon_color=0ff4c6&ring_color=9b5de5&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=Silenttears-cloud&show_icons=true&hide_border=true&bg_color=0d1117&title_color=ff2d78&text_color=c4b5fd&icon_color=0ff4c6&ring_color=9b5de5&include_all_commits=true&count_private=true" alt="GitHub Stats" />
 </a>
 <a href="https://github.com/Silenttears-cloud">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Silenttears-cloud&layout=compact&theme=transparent&hide_border=true&bg_color=0d1117&title_color=ff2d78&text_color=c4b5fd&langs_count=8" alt="Top Languages" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Silenttears-cloud&layout=compact&hide_border=true&bg_color=0d1117&title_color=ff2d78&text_color=c4b5fd&langs_count=8" alt="Top Languages" />
 </a>
 
 <br/>
 
 <a href="https://git.io/streak-stats">
-  <img src="https://streak-stats.demolab.com?user=Silenttears-cloud&theme=transparent&hide_border=true&background=0d1117&stroke=9b5de5&ring=ff2d78&fire=ff2d78&currStreakNum=f0e6ff&sideNums=c4b5fd&currStreakLabel=ff2d78&sideLabels=c4b5fd&dates=6d28d9" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=Silenttears-cloud&hide_border=true&background=0d1117&stroke=9b5de5&ring=ff2d78&fire=ff2d78&currStreakNum=f0e6ff&sideNums=c4b5fd&currStreakLabel=ff2d78&sideLabels=c4b5fd&dates=6d28d9" alt="GitHub Streak" />
 </a>
 
 </div>
@@ -208,7 +208,7 @@ export default new Ayushi();
 <br/>
 
 <a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=Silenttears-cloud&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Silenttears-cloud&theme=darkhub&no-frame=true&no-bg=true&column=6&margin-w=10" alt="GitHub Trophies" />
 </a>
 
 </div>
@@ -228,10 +228,12 @@ export default new Ayushi();
 <br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-gitblock.svg" />
-  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Graph" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/main/profile-3d-contrib/profile-night-rainbow.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/main/profile-3d-contrib/profile-south-season-animate.svg" />
+  <img src="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Graph — run the GitHub Action to generate" />
 </picture>
+
+> ⚙️ *3D graph generates via GitHub Actions — go to the Actions tab and run "Generate 3D Contribution Graph" manually once to activate.*
 
 <br/>
 
@@ -259,6 +261,8 @@ export default new Ayushi();
   <img alt="Snake animation" src="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/output/github-contribution-grid-snake-dark.svg" width="100%" />
 </picture>
 
+> ⚙️ *Snake activates after running "Generate Contribution Snake" workflow in the Actions tab.*
+
 </div>
 
 <br/>
@@ -276,7 +280,7 @@ export default new Ayushi();
 <br/>
 
 <a href="https://wakatime.com/@Silenttears-cloud">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Silenttears-cloud&theme=transparent&hide_border=true&bg_color=0d1117&title_color=ff2d78&text_color=c4b5fd&icon_color=0ff4c6&layout=compact&langs_count=8" alt="WakaTime Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Silenttears-cloud&hide_border=true&bg_color=0d1117&title_color=ff2d78&text_color=c4b5fd&icon_color=0ff4c6&layout=compact&langs_count=8" alt="WakaTime Stats" />
 </a>
 
 </div>
