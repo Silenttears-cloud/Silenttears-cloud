@@ -225,15 +225,11 @@ export default new Ayushi();
 
 <br/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/main/profile-3d-contrib/profile-night-rainbow.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/main/profile-3d-contrib/profile-south-season-animate.svg" />
-  <img src="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Graph" />
-</picture>
+<img src="https://ghchart.rshah.org/FF2D78/Silenttears-cloud" width="100%" alt="Contribution Chart" />
+
+<br/>
 
 *Every commit is a star added to the constellation.*
-
-> ⚙️ Run **"🌌 Generate 3D Contribution Graph"** in the [Actions tab](https://github.com/Silenttears-cloud/Silenttears-cloud/actions) to generate this.
 
 </div>
 
@@ -251,13 +247,11 @@ export default new Ayushi();
 
 <br/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/output/github-contribution-grid-snake.svg" />
-  <img src="https://raw.githubusercontent.com/Silenttears-cloud/Silenttears-cloud/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution Snake" />
-</picture>
+<img src="https://ghchart.rshah.org/9b5de5/Silenttears-cloud" width="100%" alt="Contribution Grid" />
 
-> ⚙️ Run **"🐍 Generate Contribution Snake"** in the [Actions tab](https://github.com/Silenttears-cloud/Silenttears-cloud/actions) once to activate.
+<br/>
+
+> 🐍 *The animated snake will appear here automatically after running the [snake workflow](https://github.com/Silenttears-cloud/Silenttears-cloud/actions/workflows/snake.yml) once.*
 
 </div>
 
