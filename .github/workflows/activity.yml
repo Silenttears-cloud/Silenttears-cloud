@@ -1,0 +1,35 @@
+# ──────────────────────────────────────────────────────────────────
+#  ⚡  Recent GitHub Activity Feed Updater
+#  Runs: Daily at 02:00 UTC + on manual trigger
+#  Updates the <!--START_SECTION:activity--> block in README.md
+#
+#  NOTE: The GITHUB_TOKEN is automatically available — no extra setup needed.
+#  The last 5 public GitHub events will appear automatically.
+# ──────────────────────────────────────────────────────────────────
+
+name: ⚡ Update Activity Feed
+
+on:
+  schedule:
+    - cron: "0 2 * * *"   # Every day at 02:00 UTC
+  workflow_dispatch:        # Allow manual trigger
+
+jobs:
+  update-activity:
+    name: Sync Recent Activity
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: ⬇️ Checkout repository
+        uses: actions/checkout@v4
+
+      - name: ⚡ Update activity section in README
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          COMMIT_MSG: "chore(bot): ⚡ update recent activity feed [skip ci]"
+          MAX_LINES: 5
+          README_FILE: README.md
+          TARGET_COMMENTS: "START_SECTION:activity,END_SECTION:activity"
